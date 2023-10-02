@@ -1,4 +1,4 @@
-package com.springapp.model; // Replace com.yourpackage with your actual package name
+package com.example.model; // Replace com.yourpackage with your actual package name
 
 import java.util.Objects;
 
