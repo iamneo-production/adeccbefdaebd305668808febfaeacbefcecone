@@ -1,7 +1,7 @@
 package com.example.controller; // Replace com.yourpackage with your actual package name
 
 import com.example.model.Medicine;
-import com.example.service.PharmacyService; // Import your service class
+// import com.example.service.PharmacyService; // Import your service class
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
