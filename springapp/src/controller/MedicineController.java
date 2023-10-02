@@ -18,7 +18,7 @@ public class MedicineController {
     @PostMapping
     public ResponseEntity<Boolean> addMedicine(@RequestBody Medicine medicine) {
         boolean result = pharmacyService.addMedicine(medicine);
-        return ResponseEntity.ok(result);
+        return ResponseEntity.ok("true");
     }
 
     @PutMapping("/{medicineId}")
