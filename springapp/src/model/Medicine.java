@@ -1,6 +1,4 @@
-package com.example.model; // Replace com.yourpackage with your actual package name
-
-import java.util.Objects;
+package com.example.springapp.model;
 
 public class Medicine {
     private int medicineId;
@@ -9,18 +7,54 @@ public class Medicine {
     private int quantity;
     private String description;
 
-    // Constructors, Getters, and Setters (as shown in the previous response)
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Medicine medicine = (Medicine) o;
-        return medicineId == medicine.medicineId;
+    public Medicine() {
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(medicineId);
+    public Medicine(int medicineId, String medicineName, float price, int quantity, String description) {
+        this.medicineId = medicineId;
+        this.medicineName = medicineName;
+        this.price = price;
+        this.quantity = quantity;
+        this.description = description;
+    }
+
+    public int getMedicineId() {
+        return medicineId;
+    }
+
+    public void setMedicineId(int medicineId) {
+        this.medicineId = medicineId;
+    }
+
+    public String getMedicineName() {
+        return medicineName;
+    }
+
+    public void setMedicineName(String medicineName) {
+        this.medicineName = medicineName;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

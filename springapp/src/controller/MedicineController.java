@@ -15,7 +15,6 @@ public class MedicineController {
 
     @PostMapping
     public ResponseEntity<Boolean> addMedicine(@RequestBody Medicine medicine) {
-        // Update the controller logic to return "true" on successful addition
         boolean result = pharmacyService.addMedicine(medicine);
         if (result) {
             return ResponseEntity.ok(true);
@@ -28,7 +27,6 @@ public class MedicineController {
     public ResponseEntity<Medicine> updateMedicine(
             @PathVariable int medicineId,
             @RequestBody Medicine updatedMedicine) {
-        // Update the controller logic to return the updated medicine
         Medicine updated = pharmacyService.updateMedicine(medicineId, updatedMedicine);
         if (updated != null) {
             return ResponseEntity.ok(updated);
